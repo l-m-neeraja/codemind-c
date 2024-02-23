@@ -1,8 +1,8 @@
 #include<stdio.h>
-int search(int *arr,int n,int key){
+int search(int *arr,int n,int x){
     int y;
     for(int i=0;i<n;i++){
-        if(arr[i]==key){
+        if(arr[i]==x){
             y=1;
             break;
         }
@@ -19,9 +19,9 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int x;
-    scanf("%d",&x);
-    int res=search(arr,n,x);
+    int key;
+    scanf("%d",&key);
+    int res = search(arr,n,key);
     if(res==1){
         printf("True");
     }
