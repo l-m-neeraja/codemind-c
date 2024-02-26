@@ -8,9 +8,9 @@ int main(){
         rev=rev*10+x;
     }
     if(rev==n){
-        printf("Palindrome");
+        printf("True");
     }
     else{
-        printf("Not Palindrome");
+        printf("False");
     }
-}    
+}
