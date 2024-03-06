@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main(){
-    int m,n;
-    scanf("%d %d",&m,&n);
-    int mat[m][n];
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
+    int n,m;
+    scanf("%d %d",&n,&m);
+    int mat[n][m];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
             scanf("%d",&mat[i][j]);
         }
     }
-    int sum=0;
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
-            sum+=mat[i][j];
+    int a=0;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+               a+=mat[i][j]; 
         }
     }
-    printf("%d",sum);
+    printf("%d",a);
 }
